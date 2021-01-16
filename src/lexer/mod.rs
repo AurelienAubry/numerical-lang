@@ -108,7 +108,7 @@ mod tests {
         let a_tokens = std::panic::catch_unwind(|| a.tokenize().unwrap());
         assert!(a_tokens.is_err());
 
-        let b = "ejaa".to_string();
+        let b = "aa".to_string();
         let b_tokens = std::panic::catch_unwind(|| b.tokenize().unwrap());
         assert!(b_tokens.is_err());
     }
